@@ -160,4 +160,6 @@ const gcdTwoNum= (a,b)=>{
     if(a==0) console.log(b)
     else console.log(a)
 }
-gcdTwoNum(20, 40);
+// gcdTwoNum(20, 40);
+
+
