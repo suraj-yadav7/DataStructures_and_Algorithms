@@ -16,8 +16,8 @@ function selectionSort(arr){
     }
     console.log("selection sort: ", arr)
 }
-// let arr=[12,46,24,52,20,9]
-// selectionSort(arr);
+let arr2=[12,46,24,52,20,9]
+selectionSort(arr2);
 
 // Bubble sort
 // Push the max element to the last of array with swapping adjacent elements
@@ -74,5 +74,23 @@ function insertionSort(arr){
     }
     console.log("Insertion sort is: ", arr)
 }
-let arr=[12,46,24,52,20,9]
-insertionSort(arr);
+// let arr=[12,46,24,52,20,9]
+// insertionSort(arr);
+
+function selectionSorting(arr){
+    for(let i=0; i<arr.length-1;i++){
+        let min=i
+        for(let j=i; j<arr.length;j++){
+            min=j
+        }
+        let temp=arr[i]
+        arr[i]=arr[min]
+        arr[min=temp]
+    }
+    console.log("Selection Sort: ", arr)
+    return arr
+}
+let arr=[2,1,5,11,3,2]
+let result = selectionSort(arr);
+console.log("Selection Sort is : ", arr);
+

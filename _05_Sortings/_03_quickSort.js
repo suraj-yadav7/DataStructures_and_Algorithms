@@ -1,4 +1,4 @@
-//QUick sort
+//Quick sort
 function quickSort(arr, low, high){
     if(low<high){
         let pIndex = partition(arr, low, high)
